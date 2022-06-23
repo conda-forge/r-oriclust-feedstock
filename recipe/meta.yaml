@@ -1,4 +1,4 @@
-{% set version = '1.0-1' %}
+{% set version = "1.0-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ORIClust_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ORIClust/ORIClust_{{ version }}.tar.gz
-  sha256: 78705097c580adcd4d69f526293040cb4d0668b736121eced35f68ea5b6b2dae
+  sha256: 8a78e945fde4333348b279e4bd79af157b0699e448b2bdfcbdf4d349b05bd20c
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,12 +36,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=ORIClust
   license: GPL-2
-  summary: ORIClust is a user-friendly R-based software package for gene clustering. Clusters
-    are given by genes matched to prespecified profiles across various ordered treatment
-    groups. It is particularly useful for analyzing data obtained from short time-course
-    or dose-response microarray experiments.
+  summary: ORIClust is a user-friendly R-based software package for gene clustering. Clusters are given by genes matched to prespecified profiles across various ordered treatment groups. It is particularly useful for analyzing data obtained from short time-course or dose-response microarray experiments.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
