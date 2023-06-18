@@ -1,11 +1,11 @@
-About r-oriclust
-================
+About r-oriclust-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-oriclust-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=ORIClust
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-oriclust-feedstock/blob/main/LICENSE.txt)
 
 Summary: ORIClust is a user-friendly R-based software package for gene clustering. Clusters are given by genes matched to prespecified profiles across various ordered treatment groups. It is particularly useful for analyzing data obtained from short time-course or dose-response microarray experiments.
 
